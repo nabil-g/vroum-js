@@ -1,1 +1,49 @@
 /*CSS*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button{
+  font-family: sans-serif;
+  font-size: 1em;
+
+}
+
+h2, section{
+  text-align: center;
+  border: 2px solid black;
+  width: 30%;
+  margin: 20px auto;
+}
+
+p{
+  margin: auto;
+}
+
+h2 {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+section{
+  background-color: pink;
+  color: black;
+  padding: 30px;
+}
+
+button{
+  border: 0;
+  background-color: blue;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+button:hover{
+  background-color: green;
+}
