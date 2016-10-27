@@ -2,7 +2,7 @@
 
 
 function clic1() { // Au clic du bouton 1
-  var radiocoches = document.querySelector('input');
+  var radiocoches = document.querySelector('input').checked;
   var nbr = radiocoches.length; // enregistrer le nombre de champs cochés
 
 
