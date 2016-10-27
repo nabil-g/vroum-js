@@ -2,6 +2,7 @@
 
 $(document).ready(function() { //Quand le document est chargé
 
+
   $('#btn1').click(function() { // Au clic du bouton 1
     var n = $( "input:checked" ).length; // enregistrer le nombre de champs cochés
     if ( n == 0) { // si ce nombre est égal à 0
@@ -15,12 +16,12 @@ $(document).ready(function() { //Quand le document est chargé
       $('#msg1').text(''); // conserver le paragraphe existant mais effacer son éventuel contenu (si l'utilisateur avait une première fois oublier de choisir)
 
 
-      var mdp = "1234"; // création du code
-      var pswd = $('#pswd').val(); // enregistrer la  valeur du champ pswd entré par l'utilisateur dans une variable
+      var mdp = 1234; // création du code
 
 
       $('#btn2').click(function(){ // au clic du bouton 2
-        if(mdp == pswd) { // si le code crée et celui entré par l'utilisateur corresponde
+        var pswd = $('#pswd').val(); // enregistrer la  valeur du champ pswd entré par l'utilisateur dans une variable
+        if(mdp == pswd) { // si le code crée et celui entré par l'utilisateur correspondent
             $('section').html('<p>Servez-vous en '+ carbchoisi + '</p>'); // alors écraser une fois de plus le contenu de la section
             $('#msg1').text('');  //effacer le contenu éventuel du paragraphe
         }
