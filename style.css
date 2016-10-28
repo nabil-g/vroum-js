@@ -36,6 +36,10 @@ section{
   padding: 30px;
 }
 
+s2{
+  display: none;
+}
+
 button{
   border: 0;
   background-color: blue;
